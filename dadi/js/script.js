@@ -1,3 +1,4 @@
+// SELEZIONO ELEMENTI HTML 
 const valComputer = document.querySelector('.computer');
 const valUser = document.querySelector('.you');
 const risultato = document.querySelector('.result');
@@ -6,9 +7,11 @@ const btnRefresh = document.querySelector('.refresh');
 let imgDadoPc = document.getElementById("imagePc");
 let imgDadoYou = document.getElementById("imageYou");
 
+// CREO NUMERI DADI RANDOM 
 let valoreDadiComputer = Math.floor(Math.random() * 6) + 1;
 let valoreDadiTu = Math.floor(Math.random() * 6) + 1;
 
+// STAMPO RISULTATI CON IMG DADI
 valComputer.innerHTML = 'Il Computer ha tirato:';
 valUser.innerHTML = 'Tu hai tirato:';
 
@@ -25,7 +28,8 @@ switch (valoreDadiComputer) {
     break;
     case 6:imgDadoPc.src = "img/6.png";
     break;
-}
+};
+
 switch (valoreDadiTu) {
     case 1:imgDadoYou.src = "img/1.png";
     break;
@@ -41,6 +45,7 @@ switch (valoreDadiTu) {
     break;
 }
 
+// LOGICA PROGRAMMA
 if (valoreDadiComputer > valoreDadiTu) {
     risultato.innerHTML = 'Il Computer ha vinto';
 } else if (valoreDadiComputer < valoreDadiTu) {
@@ -49,16 +54,7 @@ if (valoreDadiComputer > valoreDadiTu) {
     risultato.innerHTML = 'Tu e il Computer avete pareggiato, giocate di nuovo';
 }
 
+// BOTTONE RIGIOCA
 btnRefresh.addEventListener('click', function() {
     location.reload();
 })
-
-
-
-
-
-
-// switch ()
-//   imgDadoPc.src = "../img/1.jpg";
-//   document.body.appendChild(img);
-
