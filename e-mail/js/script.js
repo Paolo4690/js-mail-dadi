@@ -1,7 +1,10 @@
 let inputEmail = document.querySelector('.login');
 let btnLogin = document.querySelector('.btn-login');
+let result = document.querySelector('h2');
 
-const eMail = ["mail@gmail.com", "mail1@gmail.com", "mail2@gmail.com", "mail3@gmail.com", "mail4@gmail.com", "mail5@gmail.com"]
+const eMail = ["mail0@gmail.com", "mail1@gmail.com", "mail2@gmail.com", 
+                "mail3@gmail.com", "mail4@gmail.com", "mail5@gmail.com",
+                "mail6@gmail.com", "mail7@gmail.com", "mail8@gmail.com", "mail9@gmail.com"]
 
 btnLogin.addEventListener('click', function() { 
 let trovato = false;
@@ -13,9 +16,9 @@ let trovato = false;
     }
     
     if (trovato == false) {
-        alert('La tua e-mail non è registrata');
+        result.innerHTML = ('La tua e-mail non è registrata');
     } else {
-        alert('Stai per essere indirizzato alla tua HomePage');
+        result.innerHTML = ('Stai per essere indirizzato alla tua HomePage');
     }
 
 });

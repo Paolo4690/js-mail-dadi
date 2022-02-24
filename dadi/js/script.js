@@ -26,7 +26,7 @@ if (valoreDadiComputer > valoreDadiTu) {
     risultato.classList.add('green');
     risultato.innerHTML = 'Tu hai vinto';
 } else {
-    risultato.innerHTML = 'Tu e il Computer avete pareggiato, giocate di nuovo';
+    risultato.innerHTML = 'Tu e il Computer avete pareggiato';
 }
 
 // BOTTONE RIGIOCA
