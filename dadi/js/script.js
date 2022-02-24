@@ -47,8 +47,10 @@ switch (valoreDadiTu) {
 
 // LOGICA PROGRAMMA
 if (valoreDadiComputer > valoreDadiTu) {
+    risultato.classList.add('red');
     risultato.innerHTML = 'Il Computer ha vinto';
 } else if (valoreDadiComputer < valoreDadiTu) {
+    risultato.classList.add('green');
     risultato.innerHTML = 'Tu hai vinto';
 } else {
     risultato.innerHTML = 'Tu e il Computer avete pareggiato, giocate di nuovo';
