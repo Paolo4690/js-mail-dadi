@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gioco dei dadi</title>
+    <style>
+        .cont {
+            display: flex;
+            align-items: center; 
+        }
+        h2 {
+            margin-right: 20px;
+        }
+        img {
+            width: 50px;
+        }
+    </style>
 </head>
 <body>
     
     <h1>Gioco dei DADI</h1>
-    <h2 class="computer"></h2>
-    <h2 class="you"></h2>
+    <div class="cont">
+        <h2  class="computer"></h2>
+        <img id="imagePc" src="" alt="">
+    </div>
+    <div  class="cont">
+        <h2  class="you"></h2>
+        <img id="imageYou" src="" alt="">
+    </div>
+
     <h2 class="result"></h2>
+
     <button class="refresh">Rigioca</button>
 
     <script src="js/script.js"></script>
