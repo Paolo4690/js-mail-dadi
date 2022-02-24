@@ -14,36 +14,9 @@ let valoreDadiTu = Math.floor(Math.random() * 6) + 1;
 // STAMPO RISULTATI CON IMG DADI
 valComputer.innerHTML = 'Il Computer ha tirato:';
 valUser.innerHTML = 'Tu hai tirato:';
+imgDadoPc.src = "img/"+valoreDadiComputer+".png";
+imgDadoYou.src = "img/"+valoreDadiTu+".png";
 
-switch (valoreDadiComputer) {
-    case 1:imgDadoPc.src = "img/1.png";
-    break;
-    case 2:imgDadoPc.src = "img/2.png";
-    break;
-    case 3:imgDadoPc.src = "img/3.png";
-    break;
-    case 4:imgDadoPc.src = "img/4.png";
-    break;
-    case 5:imgDadoPc.src = "img/5.png";
-    break;
-    case 6:imgDadoPc.src = "img/6.png";
-    break;
-};
-
-switch (valoreDadiTu) {
-    case 1:imgDadoYou.src = "img/1.png";
-    break;
-    case 2:imgDadoYou.src = "img/2.png";
-    break;
-    case 3:imgDadoYou.src = "img/3.png";
-    break;
-    case 4:imgDadoYou.src = "img/4.png";
-    break;
-    case 5:imgDadoYou.src = "img/5.png";
-    break;
-    case 6:imgDadoYou.src = "img/6.png";
-    break;
-}
 
 // LOGICA PROGRAMMA
 if (valoreDadiComputer > valoreDadiTu) {
